@@ -19,11 +19,16 @@
         <button id="login" class="btn btn-success">Submit</button>
     </div>
 </div>
+<div id="bgSucces">
+    <h1>hello world</h1>
+</div>
 <script>
 const login = document.getElementById('login')
 login.addEventListener('click',function(){
     const loginArea = document.getElementById('login-area')
     loginArea.style.display = "none"
+    const taxarea = document.getElementById('bgSucces')
+    taxarea.style.display = "block"
 })
 
 </script>
