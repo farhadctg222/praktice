@@ -1,0 +1,10 @@
+body{
+    padding: 100px;
+}
+.shadow{
+    margin-top: 50px;
+    
+    border-radius: 10px solid grey;
+    
+    padding: 40px;
+}
