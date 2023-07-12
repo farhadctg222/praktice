@@ -8,12 +8,16 @@ body{
     
     padding: 40px;
 }
-.bg-danger{
+.transare{
     display: none;
 }
-#back{
-    display: none;
+
+.deposit{
+    background-color: aqua;
 }
-#loginArea{
-    display: block;
+.withdrow{
+    background-color: beige;
+}
+.total{
+    background-color: palevioletred;
 }

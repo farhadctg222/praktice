@@ -18,35 +18,44 @@
         <br>
         <button id="login" class="btn btn-success">Submit</button>
     </div>
-</div></div>
-<div class="container  bg-danger" id="bg-danger">
-    <h1>Please Your Input Value</h1></div>
+</div>
+</div>
+<div class="transare" id="transare">
+<div class="row">
+    <div class="col-md-4">
+        <div class="deposit">
+        <h5>deposit</h5>
+        <h2>$</h2></div>
+    </div>
+    <div class="col-md-4">
+        <div class="withdrow">
+        <h5>withdrow</h5>
+        <h2>$</h2>
+    </div>
+    </div>
+    <div class="col-md-4">
+        <div class="total">
+        <h5>total blance</h5>
+        <h2>$</h2>
+    </div>
+    </div>
+</div>
+</div>
 
-<button id="back" class="btn btn-success">back</button>
+
+
 
 <script>
 const login = document.getElementById('login')
 login.addEventListener('click',function(){
     const loginArea = document.getElementById('loginArea')
     loginArea.style.display = "none"
-    const taxarea = document.getElementById('bg-danger')
-    taxarea.style.display = "block"
-    const back = document.getElementById('back')
-    back.style.display = "block"
-
-})
-const back = document.getElementById('back')
-back.addEventListener('click',function(){
-    const main = document.getElementById('loginArea')
-    main.style.display = "block"
-    const new1 = document.getElementById('bg-danger')
-    new1.style.display = "none"
-    back.style.display = 'none'
-
-    
+    const transfer = document.getElementById('transare')
+    transfer.style.display = "block"
     
     
 })
+
 
 </script>
 </body>
