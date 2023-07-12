@@ -8,10 +8,12 @@ body{
     
     padding: 40px;
 }
-#bgSucces{
-width: 600px;
-height: 400px;
-background-color: aqua;
-display: none;
-
+.bg-danger{
+    display: none;
+}
+#back{
+    display: none;
+}
+#loginArea{
+    display: block;
 }

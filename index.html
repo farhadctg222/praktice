@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     </head>
 <body>
-    <div class="container" id="login-area">
+    <div class="container" id="loginArea">
     <h1 class="text-center bg-secondary text-success">Welcome to Pioner Bank</h1>
     <div class="shadow">
         <h4>Login</h4>
@@ -17,18 +17,34 @@
         <input type="password"  placeholder="Passwor" class="form-control">
         <br>
         <button id="login" class="btn btn-success">Submit</button>
-    </div>
+    </div></div>
 </div>
-<div id="bgSucces">
-    <h1>hello world</h1>
-</div>
+<div class="container  bg-danger" id="bg-danger">
+    <h1>Please Your Input Value</h1>
+
+<button id="back" class="btn btn-success">back</button>
+
 <script>
 const login = document.getElementById('login')
-login.addEventListener('click',function(){
-    const loginArea = document.getElementById('login-area')
+login.addEventListener('mouseout',function(){
+    const loginArea = document.getElementById('loginArea')
     loginArea.style.display = "none"
-    const taxarea = document.getElementById('bgSucces')
+    const taxarea = document.getElementById('bg-danger')
     taxarea.style.display = "block"
+    const back = document.getElementById('back')
+    back.style.display = "block"
+
+})
+const back = document.getElementById('back')
+back.addEventListener('mouseout',function(){
+    const main = document.getElementById('loginArea')
+    main.style.display = "block"
+    const new1 = document.getElementById('bg-danger')
+    new1.style.display = "none"
+
+    
+    
+    
 })
 
 </script>
