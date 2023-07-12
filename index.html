@@ -25,7 +25,7 @@
     <div class="col-md-4">
         <div class="deposit">
         <h5>deposit</h5>
-        <h2>$00</h2></div>
+        <h2>$<span id="currentDeposit">00</span></h2></div>
     </div>
     <div class="col-md-4">
         <div class="withdrow">
@@ -46,18 +46,18 @@
         <div class="shadow">
         <h2>deposit</h2>
         <br>
-        <input type="text" class="form-control" placeholder="dolor deposit">
+        <input type="text" id="deposit" class="form-control" placeholder="dolor deposit">
         <br>
-        <button class="btn btn-success">Submit</button>
+        <button id="addnew1" class="btn btn-success">Submit</button>
     </div>
     </div>
     <div class="col-md-6">
         <div class="shadow">
         <h2>withdrow</h2>
         <br>
-        <input type="text" class="form-control" placeholder="dolor withdrow">
+        <input type="text" id="addwithdraw" class="form-control" placeholder="dolor withdrow">
         <br>
-        <button class="btn btn-success">Submit</button>
+        <button id="newbutton" class="btn btn-success">Submit</button>
     </div>
     </div>
 </div>
@@ -73,8 +73,25 @@ login.addEventListener('click',function(){
     loginArea.style.display = "none"
     const transfer = document.getElementById('transare')
     transfer.style.display = "block"
-    
-    
+})
+// add new button 
+const adnew = document.getElementById('addnew1')
+adnew.addEventListener('click',function(){
+    const deposite = document.getElementById('deposit').value;
+    const partse = parseFloat(deposite)
+    const currentDeposit = document.getElementById('currentDeposit').innerHTML;
+    const currenParse = parseFloat(currentDeposit)
+    const total = partse + currenParse
+    document.getElementById('currentDeposit').innerHTML = total
+    document.getElementById('deposit').value = "";
+
+})
+const withdrow = document.getElementById('newbutton')
+withdrow.addEventListener('click',function(){
+    const addwithdraw = document.getElementById('addwithdraw').value;
+    const parsef = parseFloat(addwithdraw)
+    console.log(parsef)
+
 })
 
 
