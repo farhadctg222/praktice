@@ -31,13 +31,13 @@
         <div class="withdrow">
             
         <h5>withdrow</h5>
-        <h2>$00</h2>
+        <h2>$  <span id="addwithdrawnumber">00</span> </h2>
     </div>
     </div>
     <div class="col-md-4">
         <div class="total">
         <h5>total blance</h5>
-        <h2>$1200</h2>
+        <h2>$ <span id="totalDeposit">00</span></h2>
     </div>
     </div>
 </div>
@@ -46,9 +46,9 @@
         <div class="shadow">
         <h2>deposit</h2>
         <br>
-        <input type="text" id="deposit" class="form-control" placeholder="dolor deposit">
+        <input type="text" id="depositInputNumber" class="form-control" placeholder="dolor deposit">
         <br>
-        <button id="addnew1" class="btn btn-success">Submit</button>
+        <button id="DepositeButton" class="btn btn-success">Submit</button>
     </div>
     </div>
     <div class="col-md-6">
@@ -57,7 +57,7 @@
         <br>
         <input type="text" id="addwithdraw" class="form-control" placeholder="dolor withdrow">
         <br>
-        <button id="newbutton" class="btn btn-success">Submit</button>
+        <button id="withdrawButton" class="btn btn-success">Submit</button>
     </div>
     </div>
 </div>
@@ -75,24 +75,42 @@ login.addEventListener('click',function(){
     transfer.style.display = "block"
 })
 // add new button 
-const adnew = document.getElementById('addnew1')
-adnew.addEventListener('click',function(){
-    const deposite = document.getElementById('deposit').value;
-    const partse = parseFloat(deposite)
+
+const depositeButton = document.getElementById('DepositeButton')
+depositeButton.addEventListener('click',function(){
+    const newDeposit = myfun("depositInputNumber")
     const currentDeposit = document.getElementById('currentDeposit').innerHTML;
-    const currenParse = parseFloat(currentDeposit)
-    const total = partse + currenParse
-    document.getElementById('currentDeposit').innerHTML = total
-    document.getElementById('deposit').value = "";
+    const cureentParse = parseFloat(currentDeposit)
+    const toallDepositeCureent = newDeposit + cureentParse
+    const totallDeposite = document.getElementById('totalDeposit').innerHTML
+    const totalParse = parseFloat(totallDeposite)
+    const totalall = toallDepositeCureent + totalParse
+    document.getElementById('totalDeposit').innerHTML = totalall
+
+    document.getElementById('currentDeposit').innerHTML = toallDepositeCureent
+    
 
 })
-const withdrow = document.getElementById('newbutton')
-withdrow.addEventListener('click',function(){
-    const addwithdraw = document.getElementById('addwithdraw').value;
-    const parsef = parseFloat(addwithdraw)
-    console.log(parsef)
+const withdrawButton = document.getElementById('withdrawButton')
+withdrawButton.addEventListener('click',function(){
+  const addwithdraw = myfun("addwithdraw")
+  const currentWithdraw = document.getElementById('addwithdrawnumber').innerHTML;
+  const cureentWithdrawParse = parseFloat(currentWithdraw)
+  const totalWithdrawDeposite = addwithdraw + cureentWithdrawParse
+  document.getElementById('addwithdrawnumber').innerHTML = totalWithdrawDeposite
+
+
 
 })
+
+
+function myfun(depositInputNumber1){
+    const depositInputNumber = document.getElementById(depositInputNumber1).value;
+    const depositParse = parseFloat(depositInputNumber)
+    return depositParse
+
+
+}
 
 
 </script>
