@@ -1,5 +1,6 @@
 body{
     padding: 100px;
+    background-color: rgba(0, 70, 52, 0.8);
 }
 .shadow{
     margin-top: 50px;
@@ -27,7 +28,19 @@ body{
       width: 100%;
     }
   }
+  @media screen and (min-width: 552px) {
+.box{
+    color: red;
+    width: 100%;
+    background-color: aqua;
+}
+
+  }
+
+   
+
   .box{
+    width: 100%;
     background-color: rgba(6, 129, 178,01);
     height: 100px;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
@@ -35,13 +48,15 @@ body{
     
   }
   h3{
-    text-align: center;
+    
     margin-top: 100px;
   }
   a{
+    
     text-decoration: none;
-    margin-left: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
+  
   h3, a{
     color: rgb(253, 209, 12);
     font-weight: bolder;
