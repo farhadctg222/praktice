@@ -104,8 +104,11 @@ withdrawButton.addEventListener('click',function(){
     const withdrawParse = parseFloat(withdraw)
     const totalWithDraw = withdrawInputParse + withdrawParse;
     document.getElementById('addwithdrawnumber').innerHTML = totalWithDraw
-    const new1 = ok - withdrawInputParse
-    document.getElementById('totalDeposit').innerHTML = new1
+    const new1 = withdrawInputParse
+    const al =  document.getElementById('totalDeposit').innerHTML
+    const ok1 = parseFloat(al) 
+    const new12 = ok1 - new1
+    document.getElementById('totalDeposit').innerHTML= new12
     
 
 })
