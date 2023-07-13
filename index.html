@@ -74,7 +74,7 @@ login.addEventListener('click',function(){
     const transfer = document.getElementById('transare')
     transfer.style.display = "block"
 })
-// add new button 
+// login button
 
 const depositeButton = document.getElementById('DepositeButton')
 depositeButton.addEventListener('click',function(){
@@ -83,6 +83,7 @@ depositeButton.addEventListener('click',function(){
     const cureentParse = parseFloat(currentDeposit)
     const toallDepositeCureent = newDeposit + cureentParse
     const totallDeposite = document.getElementById('currentDeposit').innerHTML= toallDepositeCureent;
+    
 
     
   const totalnew1 =  newDeposit;
@@ -92,28 +93,29 @@ depositeButton.addEventListener('click',function(){
   document.getElementById('totalDeposit').innerHTML = ok;
 
     // document.getElementById('currentDeposit').innerHTML = toallDepositeCureent
-    
-    
-
 })
+
+
+
 const withdrawButton = document.getElementById('withdrawButton')
 withdrawButton.addEventListener('click',function(){
-  const addwithdraw = myfun("addwithdraw")
-  const currentWithdraw = document.getElementById('addwithdrawnumber').innerHTML;
-  const cureentWithdrawParse = parseFloat(currentWithdraw)
-  const totalWithdrawDeposite = addwithdraw + cureentWithdrawParse
-  document.getElementById('addwithdrawnumber').innerHTML = totalWithdrawDeposite
-  
-
-
+    const withdrawInputParse = myfun("addwithdraw")
+    const withdraw = document.getElementById('addwithdrawnumber').innerHTML
+    const withdrawParse = parseFloat(withdraw)
+    const totalWithDraw = withdrawInputParse + withdrawParse;
+    document.getElementById('addwithdrawnumber').innerHTML = totalWithDraw
+    const new1 = ok - withdrawInputParse
+    document.getElementById('totalDeposit').innerHTML = new1
+    
 
 })
-
 
 
 function myfun(depositInputNumber1){
     const depositInputNumber = document.getElementById(depositInputNumber1).value;
     const depositParse = parseFloat(depositInputNumber)
+    const currentDeposit = document.getElementById('currentDeposit').innerHTML;
+    const cureentParse = parseFloat(currentDeposit)
     return depositParse
 
 
