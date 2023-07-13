@@ -90,6 +90,7 @@ depositeButton.addEventListener('click',function(){
     const cureentParse = parseFloat(currentDeposit)
     const toallDepositeCureent = newDeposit + cureentParse
     const totallDeposite = document.getElementById('currentDeposit').innerHTML= toallDepositeCureent;
+    document.getElementById('currentDeposit').innerHTML = ""
     
 
     
@@ -111,6 +112,7 @@ withdrawButton.addEventListener('click',function(){
     const withdrawParse = parseFloat(withdraw)
     const totalWithDraw = withdrawInputParse + withdrawParse;
     document.getElementById('addwithdrawnumber').innerHTML = totalWithDraw
+    document.getElementById('addwithdrawnumber').innerHTML = "";
     const new1 = withdrawInputParse
     const al =  document.getElementById('totalDeposit').innerHTML
     const ok1 = parseFloat(al) 
