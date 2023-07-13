@@ -34,8 +34,23 @@ body{
     width: 100%;
     background-color: aqua;
 }
-
+}
+@media screen and (max-width: 300px){
+  #loginArea{
+    width: 400px;
   }
+  #box3{
+    width: 400px;
+  }
+}
+@media screen and (min-width: 300px){
+  #loginArea{
+    width: 400px;
+  }
+  #box3{
+    width: 400px;
+  }
+}
 
    
 
