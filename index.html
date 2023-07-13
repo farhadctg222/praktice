@@ -37,7 +37,7 @@
     <div class="col-md-4">
         <div class="total">
         <h5>total blance</h5>
-        <h2>$ <span id="totalDeposit">00</span></h2>
+        <h2>$ <span id="totalDeposit">1200</span></h2>
     </div>
     </div>
 </div>
@@ -82,12 +82,16 @@ depositeButton.addEventListener('click',function(){
     const currentDeposit = document.getElementById('currentDeposit').innerHTML;
     const cureentParse = parseFloat(currentDeposit)
     const toallDepositeCureent = newDeposit + cureentParse
-    const totallDeposite = document.getElementById('totalDeposit').innerHTML
-    const totalParse = parseFloat(totallDeposite)
-    const totalall = toallDepositeCureent + totalParse
-    document.getElementById('totalDeposit').innerHTML = totalall
+    const totallDeposite = document.getElementById('currentDeposit').innerHTML= toallDepositeCureent;
 
-    document.getElementById('currentDeposit').innerHTML = toallDepositeCureent
+    
+  const totalnew1 =  newDeposit;
+  const alll  = document.getElementById('totalDeposit').innerHTML;
+  const alltotalparse = parseFloat(alll)
+  const ok = totalnew1 + alltotalparse
+  document.getElementById('totalDeposit').innerHTML = ok;
+
+    // document.getElementById('currentDeposit').innerHTML = toallDepositeCureent
     
     
 
@@ -99,6 +103,7 @@ withdrawButton.addEventListener('click',function(){
   const cureentWithdrawParse = parseFloat(currentWithdraw)
   const totalWithdrawDeposite = addwithdraw + cureentWithdrawParse
   document.getElementById('addwithdrawnumber').innerHTML = totalWithdrawDeposite
+  
 
 
 
