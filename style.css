@@ -1,95 +1,95 @@
 body{
-    padding: 100px;
-    background-color: rgba(0, 70, 52, 0.8);
+  padding: 100px;
+  background-color: rgba(0, 70, 52, 0.8);
 }
 .shadow{
-    margin-top: 50px;
-    
-    border-radius: 10px solid grey;
-    
-    padding: 40px;
+  margin-top: 50px;
+  
+  border-radius: 10px solid grey;
+  
+  padding: 40px;
 }
 .transare{
-    display: none;
+  display: none;
 }
 
 .deposit{
-    background-color: aqua;
+  background-color: aqua;
 }
 .withdrow{
-    background-color: beige;
+  background-color: beige;
 }
 .total{
-    background-color: palevioletred;
+  background-color: palevioletred;
 }
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-      width: 100%;
-    }
-  }
-  @media screen and (min-width:300px) {
-.box{
-    color: red;
+  body {
+    background-color: lightblue;
     width: 100%;
-    background-color: aqua;
+  }
+}
+@media screen and (min-width:300px) {
+.box{
+  color: red;
+  width: 100%;
+  background-color: aqua;
 }
 }
 @media screen and (max-width: 540px){
-  #loginArea{
-    width: 250px;
-    margin:0;
-    padding: 0;
-  }
-  .text-center{
-    width: 250px;
-    margin:0;
-    padding: 0;
-  }
-  #box3{
-    width: 250px;
-    
-    margin:0;
-    padding: 0;
-    
-  }
-  #box3 h3, a{
-    font-size: 15px;
-  }
+#loginArea{
+  width: 250px;
+  margin:0;
+  padding: 0;
+}
+.text-center{
+  width: 250px;
+  margin:0;
+  padding: 0;
+}
+#box3{
+  width: 250px;
+  
+  margin:0;
+  padding: 0;
+  
+}
+#box3 h3, a{
+  font-size: 15px;
+}
 }
 @media screen and (min-width: 300px){
-  #loginArea{
-    width: auto;
-  }
-  #box3{
-    width: auto;
-    
-  }
+#loginArea{
+  width: auto;
+}
+#box3{
+  width: auto;
+  
+}
 }
 
-    
-
-  .box{
-    width: 100%;
-    background-color: rgba(6, 129, 178,01);
-    height: 100px;
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-    margin-top: 50px;
-    
-  }
-  h3{
-    
-    margin-top: 100px;
-  }
-  a{
-    
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
   
-  h3, a{
-    color: rgb(253, 209, 12);
-    font-weight: bolder;
-    text-transform: uppercase;
-    text-align: center;
-  }
+
+.box{
+  width: 100%;
+  background-color: rgba(6, 129, 178,01);
+  height: 100px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  margin-top: 50px;
+  
+}
+h3{
+  
+  margin-top: 100px;
+}
+a{
+  
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3, a{
+  color: rgb(253, 209, 12);
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+}
