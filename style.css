@@ -37,11 +37,19 @@ body{
 }
 @media screen and (max-width: 300px){
   #loginArea{
-    width: 400px;
+    width: 250px;
+    margin:0;
+    padding: 0;
   }
   #box3{
-    width: 400px;
+    width: 250px;
     
+    margin:0;
+    padding: 0;
+    
+  }
+  #box3 h3, a{
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 300px){
